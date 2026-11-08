@@ -21,7 +21,7 @@
 
 - **`usabilidade.html`:** página do tema Usabilidade.
 - **`ux.html`:** página do tema Experiência do Usuário, com etapas de UX, jornada do usuário, exemplos positivos/negativos e quiz.
-- **`acessibilidade.html`:** a ser feito.
+- **`acessibilidade.html`:** página do tema Acessibilidade, com princípios inclusivos, checklist prático, exemplos de barreiras e quiz.
 - **`responsividade.html`:** a ser feito.
 ------------------------------------
 - **`index.html`:** página inicial.
@@ -31,6 +31,8 @@
 - **`usabilidade.js`:** o quiz da página de Usabilidade.
 - **`ux.css`:** estilos específicos da página de Experiência do Usuário.
 - **`ux.js`:** quiz interativo da página de Experiência do Usuário.
+- **`acessibilidade.css`:** estilos específicos da página de Acessibilidade.
+- **`acessibilidade.js`:** quiz interativo da página de Acessibilidade.
 - **`icons/`:** ícones dos cartões da abertura.
 
 ### Conceitos aplicados no design e explicação:
