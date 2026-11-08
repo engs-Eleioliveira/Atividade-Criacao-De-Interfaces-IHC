@@ -1,0 +1,95 @@
+.ux-hero {
+    position: relative;
+    flex: 1 1 320px;
+    min-width: 280px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(76, 201, 240, 0.6);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(106, 95, 209, 0.7), rgba(42, 33, 112, 0.9));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    transform: rotate(2deg);
+}
+
+.ux-orbita {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border: 1px solid rgba(76, 201, 240, 0.7);
+    border-radius: 50%;
+}
+
+.ux-orbita-2 {
+    width: 260px;
+    height: 100px;
+    transform: rotate(-25deg);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ux-coracao {
+    z-index: 1;
+    color: #4cc9f0;
+    font-size: 4.5rem;
+    text-shadow: 0 0 28px rgba(76, 201, 240, 0.8);
+}
+
+.ux-ponto {
+    position: absolute;
+    z-index: 2;
+    padding: 5px 9px;
+    color: #0b1636;
+    background: #ffffff;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.ux-ponto-1 { top: 28px; left: 28px; }
+.ux-ponto-2 { right: 24px; top: 104px; background: #4cc9f0; }
+.ux-ponto-3 { bottom: 24px; left: 72px; background: #c9c3ff; }
+
+.jornada-ux {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.8fr) 1.6fr;
+    gap: 28px;
+    padding: 28px;
+    background: #3b2f8f;
+    border: 1px solid rgba(76, 201, 240, 0.5);
+    border-radius: 12px;
+}
+
+.jornada-ux h2 { margin: 4px 0 10px; }
+.jornada-ux p { color: #e4e1ff; line-height: 1.6; }
+.selo { color: #4cc9f0 !important; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+.jornada-linha { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-items: stretch; }
+.jornada-linha article { padding: 16px 12px; background: #2a2170; border-radius: 10px; }
+.jornada-linha span { color: #4cc9f0; font-weight: 800; }
+.jornada-linha h3 { margin: 22px 0 5px; font-size: 1rem; }
+.jornada-linha p { font-size: .9rem; }
+
+.ux-exemplo-visual {
+    min-height: 170px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    color: #0b1636;
+}
+
+.ux-exemplo-visual span { font-size: .85rem; }
+.ux-exemplo-visual strong { font-family: Poppins, sans-serif; font-size: 1.2rem; }
+.ux-exemplo-visual small { font-size: .85rem; }
+.ux-positivo { background: linear-gradient(145deg, #c9f3ff, #4cc9f0); }
+.ux-negativo { color: #fff; background: linear-gradient(145deg, #7d273d, #30152f); }
+.ux-negativo small { color: #ffc6d1; }
+
+@media (max-width: 760px) {
+    .jornada-ux { grid-template-columns: 1fr; }
+    .jornada-linha { grid-template-columns: repeat(2, 1fr); }
+    .ux-hero { transform: none; }
+}

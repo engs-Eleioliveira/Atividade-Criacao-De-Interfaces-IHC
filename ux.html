@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência do Usuário | Criação de Interfaces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usabilidade.css">
+    <link rel="stylesheet" href="ux.css">
+</head>
+<body>
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="menu-lista" id="menu-lista" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html"><span>00</span>Início</a></li>
+            <li><a href="usabilidade.html"><span>01</span>Usabilidade</a></li>
+            <li><a href="ux.html" aria-current="page"><span>02</span>Experiência do Usuário</a></li>
+            <li><a href="acessibilidade.html"><span>03</span>Acessibilidade</a></li>
+            <li><a href="responsividade.html"><span>04</span>Responsividade</a></li>
+        </ul>
+    </nav>
+    <div class="menu-fundo"></div>
+
+    <section class="inicio">
+        <header class="cabecalho">
+            <a href="index.html" class="logo">
+                <span class="logo-icone" aria-hidden="true">IHC</span>
+                <span class="logo-texto">
+                    <span class="logo-pequeno">Criação de</span>
+                    <span class="logo-grande">Interfaces</span>
+                </span>
+            </a>
+        </header>
+
+        <div class="inicio-conteudo">
+            <div class="tema-texto">
+                <nav class="caminho" aria-label="Caminho">
+                    <a href="index.html">Início</a> <span aria-hidden="true">›</span> Experiência do Usuário
+                </nav>
+                <div class="tema-titulo">
+                    <span class="tema-numero" aria-hidden="true">02</span>
+                    <h1>Experiência<br>do usuário</h1>
+                </div>
+                <p class="tema-descricao">
+                    UX é tudo o que uma pessoa percebe, sente e faz antes, durante e depois de usar um produto. Uma boa experiência resolve o problema com clareza e deixa vontade de voltar.
+                </p>
+                <div class="etiquetas">
+                    <span class="etiqueta">Pesquisa</span>
+                    <span class="etiqueta">Jornada</span>
+                    <span class="etiqueta">Emoção</span>
+                </div>
+            </div>
+            <div class="ux-hero" aria-label="Ilustração da jornada de uma pessoa usuária">
+                <span class="ux-orbita ux-orbita-1"></span>
+                <span class="ux-orbita ux-orbita-2"></span>
+                <span class="ux-coracao" aria-hidden="true">♥</span>
+                <span class="ux-ponto ux-ponto-1">entender</span>
+                <span class="ux-ponto ux-ponto-2">usar</span>
+                <span class="ux-ponto ux-ponto-3">voltar</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteudo">
+        <section class="secao">
+            <h2>O que constrói uma boa experiência?</h2>
+            <p class="secao-intro">UX não é só deixar a tela bonita. Clique em cada etapa para entender como uma experiência é pensada.</p>
+            <div class="heuristicas ux-etapas">
+                <details class="heuristica" open>
+                    <summary><span class="numero">1</span>Conhecer a pessoa</summary>
+                    <p>Observar necessidades, objetivos e dificuldades reais antes de escolher uma solução.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">2</span>Mapear a jornada</summary>
+                    <p>Enxergar todos os momentos: a descoberta, o primeiro uso, a tarefa e o retorno.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">3</span>Resolver com clareza</summary>
+                    <p>Organizar conteúdo e ações para que a pessoa entenda o próximo passo sem esforço.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">4</span>Criar confiança</summary>
+                    <p>Usar feedback, transparência e consistência para que a pessoa se sinta segura.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">5</span>Testar e melhorar</summary>
+                    <p>Validar com pessoas reais, aprender com os erros e evoluir continuamente.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">6</span>Entregar valor</summary>
+                    <p>Medir se a interface realmente ajuda a pessoa a alcançar o que precisava.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <p class="destaque-frase">A experiência acontece na cabeça de quem usa.</p>
+            <p class="destaque-fonte">Por isso, UX começa ouvindo pessoas e termina aprendendo com elas.</p>
+        </section>
+
+        <section class="jornada-ux" aria-labelledby="jornada-titulo">
+            <div>
+                <p class="selo">A jornada de uma pessoa</p>
+                <h2 id="jornada-titulo">Do primeiro contato ao retorno</h2>
+                <p>Em cada momento existe uma expectativa diferente. O trabalho de UX é reduzir dúvidas e criar uma sensação de progresso.</p>
+            </div>
+            <div class="jornada-linha">
+                <article><span>01</span><h3>Descobre</h3><p>“Isso é para mim?”</p></article>
+                <article><span>02</span><h3>Experimenta</h3><p>“Como começo?”</p></article>
+                <article><span>03</span><h3>Consegue</h3><p>“Deu certo!”</p></article>
+                <article><span>04</span><h3>Recomenda</h3><p>“Vou voltar.”</p></article>
+            </div>
+        </section>
+
+        <section class="exemplos">
+            <div class="exemplo">
+                <div class="exemplo-imagem ux-exemplo-visual ux-positivo" aria-hidden="true"><span>Olá, Ana!</span><strong>Seu pedido está a caminho</strong><small>🔵 Atualizado agora</small></div>
+                <h3>Experiência que acolhe</h3>
+                <ul>
+                    <li>Personaliza a comunicação sem exagerar <span>(empatia)</span></li>
+                    <li>Mostra o status e o próximo passo <span>(confiança)</span></li>
+                    <li>Usa uma linguagem humana e objetiva <span>(clareza)</span></li>
+                </ul>
+            </div>
+            <div class="exemplo exemplo-ruim">
+                <div class="exemplo-imagem ux-exemplo-visual ux-negativo" aria-hidden="true"><span>USUÁRIO #4821</span><strong>ERRO 504: SOLICITAÇÃO INVÁLIDA</strong><small>Consulte o administrador do sistema.</small></div>
+                <h3>Experiência que afasta</h3>
+                <ul>
+                    <li>Trata a pessoa como um número <span>(distância)</span></li>
+                    <li>Não explica o que aconteceu nem como seguir <span>(insegurança)</span></li>
+                    <li>Usa termos técnicos sem necessidade <span>(confusão)</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <p class="quiz-contador">Teste rápido · <span id="quiz-numero">1</span> de 3</p>
+            <h2 class="quiz-pergunta" id="quiz-pergunta"></h2>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <p class="quiz-resposta" id="quiz-resposta" aria-live="polite"></p>
+            <button class="quiz-proxima" id="quiz-proxima" hidden>Próxima →</button>
+        </section>
+
+        <nav class="navegacao-temas" aria-label="Navegar entre temas">
+            <a href="usabilidade.html" class="nav-tema">
+                <span class="nav-tema-dica">← Tema anterior</span>
+                <span class="nav-tema-nome">01 · Usabilidade</span>
+            </a>
+            <a href="acessibilidade.html" class="nav-tema nav-proximo">
+                <span class="nav-tema-dica">Próximo tema →</span>
+                <span class="nav-tema-nome">03 · Acessibilidade</span>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="rodape">
+        <a href="#" class="btn-creditos">Créditos</a>
+        <p>Atividade IHC<br>2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ux.js"></script>
+</body>
+</html>

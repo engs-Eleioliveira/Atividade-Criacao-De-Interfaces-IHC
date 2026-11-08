@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usabilidade | Criação de Interfaces</title>
+    <!--preconnect adianta a conexão pra fonte carregar mais rápido-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--fonte Poppins do Google Fonts, usada nos títulos-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usabilidade.css">
+</head>
+<body>
+
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="menu-lista" id="menu-lista" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html"><span>00</span>Início</a></li>
+            <li><a href="usabilidade.html" aria-current="page"><span>01</span>Usabilidade</a></li>
+            <li><a href="ux.html"><span>02</span>Experiência do Usuário</a></li>
+            <li><a href="acessibilidade.html"><span>03</span>Acessibilidade</a></li>
+            <li><a href="responsividade.html"><span>04</span>Responsividade</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-fundo"></div>
+
+    <section class="inicio">
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+            <span class="logo-icone" aria-hidden="true">IHC</span>
+            <span class="logo-texto">
+                <span class="logo-pequeno">Criação de</span>
+                <span class="logo-grande">Interfaces</span>
+            </span>
+        </a>
+    </header>
+
+    <div class = "inicio-conteudo">
+            <div class="tema-texto">
+                <nav class="caminho" aria-label="Caminho">
+                    <a href="index.html">Início</a> <span aria-hidden="true">›</span> Usabilidade
+                </nav>
+            
+                <div class="tema-titulo">
+                    <span class="tema-numero" aria-hidden="true">01</span>
+                    <h1>Usabilidade</h1>
+                </div>
+
+                <p class="tema-descricao">
+                    Usabilidade é o quanto uma interface é fácil de usar. Um site com boa usabilidade deixa a pessoa encontrar o que precisa, entender o que está acontecendo e terminar a tarefa sem frustração.
+                </p>
+
+        <div class="etiquetas">
+                    <span class="etiqueta">Eficácia</span>
+                    <span class="etiqueta">Eficiência</span>
+                    <span class="etiqueta">Satisfação</span>
+            </div>
+        </div>
+        <img class="tema-imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCgD2QifOTj23Lh9pDi9-lFw1KpeTi8c5r3DpISkAuMQ&s=10" alt="Pessoas analisando a interface de um site">
+    </div>
+    </section>
+
+    <main class="conteudo">
+        <section class="secao">
+            <h2>As 10 heurísticas de Nielsen</h2>
+            <p class = "secao-intro">
+                Regras práticas criadas por Jakob Nielsen em 1994. Clique em uma heurística pra ver um exemplo.
+            </p>
+
+
+            <!-- HEURISTICAS -->
+
+            <div class="heuristicas">
+                <details class="heuristica">
+                    <summary><span class="numero">1</span>Status do sistema</summary>
+                    <div>
+                        <p>Mostrar o que está acontecendo. Ex.: a barra que enche enquanto um arquivo é enviado.</p>
+                    </div>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">2</span>Mundo real</summary>
+                    <p>Usar palavras e ícones que a pessoa já conhece. Ex.: o ícone de carrinho nas lojas online.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">3</span>Controle e liberdade</summary>
+                    <p>Sempre ter como desfazer ou voltar. Ex.: o "desfazer envio" de alguns e-mails.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">4</span>Consistência</summary>
+                    <p>Botões iguais fazem a mesma coisa em todas as páginas. Ex.: o menu igual em todo este site.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">5</span>Prevenção de erros</summary>
+                    <p>Evitar o erro antes que ele aconteça. Ex.: perguntar "tem certeza?" antes de apagar algo.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">6</span>Reconhecer, não lembrar</summary>
+                    <p>Deixar as opções à vista, sem obrigar a decorar. Ex.: a lista de pesquisas recentes.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">7</span>Flexibilidade</summary>
+                    <p>Atalhos para quem já é experiente. Ex.: Ctrl+C e Ctrl+V.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">8</span>Design minimalista</summary>
+                    <p>Mostrar só o que importa, sem poluir a tela. Ex.: a página inicial do Google.</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">9</span>Corrigir erros</summary>
+                    <p>Mensagens de erro claras, que dizem como resolver. Ex.: "a senha precisa ter 8 caracteres".</p>
+                </details>
+                <details class="heuristica">
+                    <summary><span class="numero">10</span>Ajuda</summary>
+                    <p>Ter ajuda fácil de achar quando precisar. Ex.: a seção de perguntas frequentes.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- frase de destaque pra complementar-->
+         <section class="destaque">
+            <p class="destaque-frase">Um bom site não faz você parar pra pensar onde clicar.</p>
+            <p class="destaque-fonte">A ideia central de <em>Não me faça pensar</em>, de Steve Krug</p>
+        </section>
+
+        <!-- exemplo de site ruim -->
+        <section class="exemplos">
+            <div class="exemplo">
+                <div class="exemplo-imagem">
+                    <img src="SiteBom.png" alt="Loja online organizada, com menu simples, busca e um botão principal">
+                </div>
+                <h3>Exemplo bom</h3>
+                <ul>
+                    <li>Menu com poucos links e nomes claros <span>(heurística 6)</span></li>
+                    <li>Um único botão principal, "Ver ofertas", que se destaca do resto <span>(heurística 8)</span></li>
+                    <li>O carrinho mostra quantos itens tem <span>(heurística 1)</span></li>
+                </ul>
+            </div>
+            <div class="exemplo exemplo-ruim">
+                <div class="exemplo-imagem">
+                    <img src="SiteRuim.png" alt="Site confuso, com muitas cores, links repetidos e imagens sem relação">
+                </div>
+                <h3>Exemplo ruim</h3>
+                <ul>
+                    <li>Links repetidos e com nomes vagos, como "Mais Links" e "Outro Link" <span>(heurísticas 4 e 6)</span></li>
+                    <li>Cores fortes e imagens sem relação com o conteúdo <span>(heurística 8)</span></li>
+                    <li>"Clique aqui para saber mais!!!" não diz para onde o link leva <span>(heurística 2)</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- quiz usando javascript-->
+        <section class="quiz">
+            <p class="quiz-contador">Teste rápido · <span id="quiz-numero">1</span> de 3</p>
+            <h2 class="quiz-pergunta" id="quiz-pergunta"></h2>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <!-- aria-live faz o leitor de tela ler a resposta quando ela aparece -->
+            <p class="quiz-resposta" id="quiz-resposta" aria-live="polite"></p>
+            <button class="quiz-proxima" id="quiz-proxima" hidden>Próxima →</button>
+        </section>
+        <!--------------------------->
+
+        <nav class="navegacao-temas" aria-label="Navegar entre temas">
+            <a href="index.html" class="nav-tema">
+                <span class="nav-tema-dica">← Voltar</span>
+                <span class="nav-tema-nome">Início</span>
+            </a>
+            <a href="ux.html" class="nav-tema nav-proximo">
+                <span class="nav-tema-dica">Próximo tema →</span>
+                <span class="nav-tema-nome">02 · Experiência do Usuário</span>
+            </a>
+        </nav>
+
+
+    </main>
+
+
+     <footer class="rodape">
+        <a href="#" class="btn-creditos">Créditos</a>
+        <p>Atividade IHC<br>2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="usabilidade.js"></script>
+</body>
+</html>
